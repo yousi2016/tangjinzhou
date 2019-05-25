@@ -35,6 +35,7 @@
     Total 3 (delta 0), reused 0 (delta 0)
     To git@github.com:yousi2016/tangjinzhou.git
     65b6343..cda1f4e  master -> master
+7.在gitee上导入github仓库tangjinzhou即可
 
 
 
