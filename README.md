@@ -1,32 +1,43 @@
-# my-app
+使用git上传项目到github步骤：
+1.首先在github上新建仓库名字tangjinzhou
+2.git clone https://github.com/yousi2016/tangjinzhou.git到指定文件夹，这样tangjinzhou文件夹就会受到git控制了
+3.Administrator@PC-20180723OWWX MINGW64 /d/geekbang/tangjinzhou (master)
+4.新创建两个本地存储库github和gitee
+    Administrator@PC-20180723OWWX MINGW64 /d/geekbang/tangjinzhou (master)
+    $ git remote add github git@github.com:yousi2016/tangjinzhou.git
 
-## Project setup
-```
-npm install
-```
+    Administrator@PC-20180723OWWX MINGW64 /d/geekbang/tangjinzhou (master)
+    $ git remote add gitee git@gitee.com:frontEndArchitect/tangjinzhou.git
+5.删掉以前的origin存储库 $ git remote rm origin
+    Administrator@PC-20180723OWWX MINGW64 /d/geekbang/tangjinzhou (master)
+    $ git remote -v
+    gitee   git@gitee.com:frontEndArchitect/tangjinzhou.git (fetch)
+    gitee   git@gitee.com:frontEndArchitect/tangjinzhou.git (push)
+    github  git@github.com:yousi2016/tangjinzhou.git (fetch)
+    github  git@github.com:yousi2016/tangjinzhou.git (push)
+    origin  https://github.com/yousi2016/tangjinzhou.git (fetch)
+    origin  https://github.com/yousi2016/tangjinzhou.git (push)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+    Administrator@PC-20180723OWWX MINGW64 /d/geekbang/tangjinzhou (master)
+    $ git remote rm origin
 
-### Compiles and minifies for production
-```
-npm run build
-```
+    Administrator@PC-20180723OWWX MINGW64 /d/geekbang/tangjinzhou (master)
+    $ git remote -v
+    gitee   git@gitee.com:frontEndArchitect/tangjinzhou.git (fetch)
+    gitee   git@gitee.com:frontEndArchitect/tangjinzhou.git (push)
+    github  git@github.com:yousi2016/tangjinzhou.git (fetch)
+    github  git@github.com:yousi2016/tangjinzhou.git (push)
+6.$ git push github master
+    Counting objects: 3, done.
+    Delta compression using up to 4 threads.
+    Compressing objects: 100% (3/3), done.
+    Writing objects: 100% (3/3), 2.40 KiB | 0 bytes/s, done.
+    Total 3 (delta 0), reused 0 (delta 0)
+    To git@github.com:yousi2016/tangjinzhou.git
+    65b6343..cda1f4e  master -> master
 
-### Run your tests
-```
-npm run test
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
 
