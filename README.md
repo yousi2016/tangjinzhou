@@ -57,7 +57,9 @@ Nodejs安装及环境配置
 https://www.jianshu.com/p/13f45e24b1de
 
 
-一.vue cli 项目初始化
+
+05 | 初识单文件组件
+    vue cli 项目初始化
     1.npm install -g @vue/cli
     2.vue create my-app
         1.选择默认的default即可按回车生成项目目录和依赖脚本
@@ -160,6 +162,34 @@ https://www.jianshu.com/p/13f45e24b1de
           <span style="font-size:20px;">{{item}}</span>
         </todo-item>
         扩展功能
+06 | Vue组件的核心概念(1)：属性
+    组件概念：小型的，独立的，可以复用的，ui模块
+    组件三大核心概念：属性，事件，插槽
+    vue组件=vue实例=new Vue(options),以后90%的工作都是围绕配置options进行的哦
+    属性：
+        自定义属性props:组件props中声明的属性
+
+        原生属性attrs：没有声明的属性，默认自动挂在到组件根元素上，设置inheritAttrs为false可以关闭自动挂载
+
+        特殊属性class,style：挂载到组件根元素上，支持字符串，对象，数组等多种语法
+
+ 07 | Vue组件的核心概念(2)：事件   
+    事件
+        普通事件
+            @click，@input，@change，@xxx等事件，
+            通过this.$emit('xxx', ...)触发
+        修饰符事件
+            @input.trim, @click.stop,@submit.prevent等，一般用于原生HTML元素，自定义组件需要自行开发支持
+
+08 | Vue组件的核心概念(3)：插槽
+        普通插槽
+            <template slot='xxx'>...</template>
+            <template v-slot:xxx>...</template>
+        作用域插槽
+            <template slot='xxx' slot-scope='props'>...</template>
+            <template v-slot:xxx='props'>...</template>
+
+
         
 
 
