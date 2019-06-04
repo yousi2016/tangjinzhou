@@ -173,7 +173,7 @@ https://www.jianshu.com/p/13f45e24b1de
 
         特殊属性class,style：挂载到组件根元素上，支持字符串，对象，数组等多种语法
 
- 07 | Vue组件的核心概念(2)：事件   
+07 | Vue组件的核心概念(2)：事件   
     事件
         普通事件
             @click，@input，@change，@xxx等事件，
@@ -188,6 +188,26 @@ https://www.jianshu.com/p/13f45e24b1de
         作用域插槽
             <template slot='xxx' slot-scope='props'>...</template>
             <template v-slot:xxx='props'>...</template>
+
+09 | 双向绑定和单向数据流不冲突
+    双向绑定：
+        model更新view
+        view更新model
+    单向数据流
+        model更新view
+    
+    vue是单向数据流，不是双向绑定
+    vue的双向绑定不过是语法糖
+    object.definedProperty是用来做响应式更新的，和双向绑定没关系
+
+10 | 理解虚拟DOM及key属性的作用
+
+11 | 如何触发组件的更新
+    任何直接操作dom的行为都是在作死
+    
+    
+
+    
 
 
         
