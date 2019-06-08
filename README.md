@@ -227,7 +227,63 @@ https://www.jianshu.com/p/13f45e24b1de
 
 13 | 生命周期的应用场景和函数式组件
 14 | 指令的本质是什么
-     
+15 | 常用高级特性provide/inject
+    开发底层通用组件用的多，可以解决组件间通信的问题
+16 | 如何优雅地获取跨层级组件实例（拒绝递归）
+     递归查找：代码繁琐，性能低效   
+17 | template和JSX的对比以及它们的本质
+    template：
+        模板语法（HTML的扩展）
+        数据绑定使用Mustache语法（双大括号）
+        <span>message{{msg}}</span>
+        vue大量使用的
+        学习成本低
+        大量内置指令简化开发
+        组件作用域css
+        But灵活性低
+        偏视图表现
+    JSX:
+        js的语法扩展
+        数据绑定使用单引号
+        <span>message{this.msg}</span>
+        灵活，不需要指令的支持就可以书写各种逻辑
+        偏逻辑复杂的
+18 | 习题解答(1)
+    1.子组件为何不可以修改父组件传递的Prop，如果修改了，Vue如何监控到属性的修改并且给出警告的？
+    Object.defineProperty();
+    详见：
+    https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty
+    2.this.$emit的返回值是什么
+        this
+        如果需要返回值可以使用回调函数
+    3.相同名称的插槽是合并还是替换
+        Vue2.5版本，普通插槽合并，作用域插槽替换
+        vue2.6版本，都是替换
+    4.扩展PersonalInfo Demo 对手机号做非空且合法校验，如不合法则给出错误提示
+    5.为什么不能用index作为key
+        更新DOM性能问题
+        会引入状态bug问题
+    6.数组有哪些方法支持响应式更新，如果不支持如何处理，底层原理如何实现的？
+        支持：push(),pop(),shift(),unshift(),splice(),sort(),reverse()
+        不支持：filter(),concat(),slice()
+        原理同样是使用Object.definedProperty对数组方法进行改写
+    
+19 | 习题解答(2)
+    7.对watch1 demo进行防抖改造，即知道用户输入停止超过500ms后才更新fullName
+        setTimeout
+        lodash debounce
+        demo 1.5/Wattch1_pro
+    8.设计一个秒杀倒计时的组件
+
+    9.查看组件生命周期和指令周期钩子的运行顺序
+    10.使用2.6最新API Vue.obserable优化响应式provide
+    11.v-ant-ref指令回调中能否对更改响应式数据？为什么？
+        不能，会死循环
+
+
+
+
+
     
 
 
