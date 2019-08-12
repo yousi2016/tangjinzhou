@@ -59,27 +59,27 @@ https://www.jianshu.com/p/13f45e24b1de
 
 
 05 | 初识单文件组件
-    vue cli 项目初始化
-    1.npm install -g @vue/cli
-    2.vue create my-app
-        1.选择默认的default即可按回车生成项目目录和依赖脚本
-        2.一路按回车就行，等待一段时间后会出现以下信息
-            ? Please pick a preset: Manually select features
-            ? Check the features needed for your project: (Press <space> to select, <a> to t
-            ? Check the features needed for your project: (Press <space> to select, <a> to t
-            ? Pick a linter / formatter config: (Use arrow keys)
-            ? Pick a linter / formatter config: Basic
-            ? Pick additional lint features: (Press <space> to select, <a> to toggle all, <i
-            ? Pick additional lint features: (Press <space> to select, <a> to toggle all, <i
-            ? Where do you prefer placing config for Babel, PostCSS, ESLint, etc.? (Use arro
-            ? Where do you prefer placing config for Babel, PostCSS, ESLint, etc.? In dedica
-            ? Save this as a preset for future projects? (y/N)
-            ? Save this as a preset for future projects? No
-            -  Creating project in D:\geekbang\tangjinzhou\my-app.
-            ✨  Creating project in D:\geekbang\tangjinzhou\my-app.
-            -  Initializing git repository...
-            🗃  Initializing git repository...
-            ⚙  Installing CLI plugins. This might take a while...
+    vue cli 项目初始化  
+    1.npm install -g @vue/cli  
+    2.vue create my-app  
+        1.选择默认的default即可按回车生成项目目录和依赖脚本  
+        2.一路按回车就行，等待一段时间后会出现以下信息  
+            ? Please pick a preset: Manually select features  
+            ? Check the features needed for your project: (Press <space> to select, <a> to t  
+            ? Check the features needed for your project: (Press <space> to select, <a> to t  
+            ? Pick a linter / formatter config: (Use arrow keys)  
+            ? Pick a linter / formatter config: Basic  
+            ? Pick additional lint features: (Press <space> to select, <a> to toggle all, <i  
+            ? Pick additional lint features: (Press <space> to select, <a> to toggle all, <i  
+            ? Where do you prefer placing config for Babel, PostCSS, ESLint, etc.? (Use arro  
+            ? Where do you prefer placing config for Babel, PostCSS, ESLint, etc.? In dedica   
+            ? Save this as a preset for future projects? (y/N)  
+            ? Save this as a preset for future projects? No  
+            -  Creating project in D:\geekbang\tangjinzhou\my-app.  
+            ✨  Creating project in D:\geekbang\tangjinzhou\my-app.  
+            -  Initializing git repository...  
+            🗃  Initializing git repository...  
+            ⚙  Installing CLI plugins. This might take a while...  
 
 
 
